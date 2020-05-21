@@ -1,7 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app/app';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {Provider} from 'react-redux'
+import store  from "./Redux/Store";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from 'react-router-dom';
+import MainPage from "./Modules/MainPage/MainPage";
 
 
-ReactDOM.render(<App />, document.getElementById('root')
+
+
+ReactDOM.render(
+	<Provider store={store} >
+		<Router>
+			<Switch>
+				<Route path = '/' component ={MainPage} />
+				<Redirect to='/' />
+			</Switch>
+		</Router>
+
+	</Provider>,
+	document.getElementById('root')
 );

@@ -1,0 +1,22 @@
+.top-navigation {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    background-image: linear-gradient(to top right, rgb(61, 39, 39),
+                        rgb(72, 39, 47), rgb(83, 38, 54),
+                        rgb(94, 38, 62), rgb(105, 37, 69),
+                        rgb(116, 37, 77), rgb(126, 36, 84),
+                        rgb(137, 36, 92), rgb(148, 35, 99),
+                        rgb(159, 35, 107), rgb(170, 34, 114),
+                        rgb(181, 34, 122));
+}
+.top-navigation__left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-left: 1rem;
+}
