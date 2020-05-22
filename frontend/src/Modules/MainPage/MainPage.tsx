@@ -9,7 +9,7 @@ const MainPage = () => {
 		<div className={'main-page'}>
 			<Header />
 			<TopNavigation />
-			<div>Main Page</div>
+			<div className={'main-page__main'}>Main Page</div>
 			<Footer/>
 		</div>
 	)

@@ -1,0 +1,12 @@
+.navigation-buttons {
+    color: white;
+}
+
+.navigation-buttons__container-item {
+    color: white;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}

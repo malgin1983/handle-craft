@@ -1,0 +1,13 @@
+.header {
+    height: 5rem;
+    background-image: linear-gradient(to bottom right, rgb(11, 20, 117), rgb(29, 37, 128), rgb(46, 54, 138), rgb(64, 71, 149), rgb(82, 88, 160), rgb(100, 105, 171), rgb(117, 122, 181), rgb(135, 139, 192), rgb(153, 156, 203), rgb(171, 173, 214), rgb(188, 190, 224), rgb(206, 207, 235));
+}
+.header-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    line-height: 5rem;
+}

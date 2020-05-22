@@ -1,23 +1,31 @@
 import * as React from 'react'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
+import { withStyles } from '@material-ui/core/styles';
 import './TopNavigation.css'
+import TextButton from "../../Components/TextButton/TextButton";
+import NavigationButtons from "../NavigationButtons/NavigationButtons";
 
-const TopNavigation = () => {
+const TopNavigation:React.FC = () => {
+	const ButterButton = withStyles({
+		root: {
+			color: '#0b1475',
+			marginLeft: '1rem',
+		},
+	})(IconButton);
 
-		return (
+	return (
 		<div className={'top-navigation'}>
 			<div className={'top-navigation__left'}>
-				<IconButton edge="start"  color="inherit" aria-label="menu">
+				<ButterButton edge="start"   aria-label="menu" className={'top-navigation__left-button'}>
 					<MenuIcon />
-				</IconButton>
-				<Typography variant="h6"  >
-					Информация
-				</Typography>
+				</ButterButton>
 			</div>
-			<Button color="inherit">Войти</Button>
+			<div className={'top-navigation__right'}>
+				<NavigationButtons />
+				<TextButton text={'Войти'} color={'#0b1475'} />
+			</div>
+
 		</div>
 	)
 }
