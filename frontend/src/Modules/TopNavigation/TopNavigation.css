@@ -36,3 +36,9 @@
     align-items: center;
     padding-right: 1rem;
 }
+
+.top-navigation__modal {
+    width: 50%;
+    margin: 5rem auto;
+    background-color: white;
+}

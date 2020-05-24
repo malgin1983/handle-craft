@@ -1,0 +1,13 @@
+.registration-modal {
+    width: 50%;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+.registration-modal__tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.registration-modal__container-fields {
+    padding-top: 2rem;
+}

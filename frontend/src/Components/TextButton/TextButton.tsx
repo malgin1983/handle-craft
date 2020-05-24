@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 interface TextButtonProps {
 	text: string
 	color: string
+	handleClick: () => void
 }
 /**
  * @TextButton- component-text-button *@param props.text - цвет элементов и значка.
@@ -13,7 +14,7 @@ interface TextButtonProps {
  *@param props.color - color text
  */
 const TextButton:React.FC<TextButtonProps> = props => {
-	const { text, color} = props
+	const { text, color, handleClick } = props
 	const TetxButton = withStyles({
 		root: {
 			color: `${color}`,
@@ -23,7 +24,7 @@ const TextButton:React.FC<TextButtonProps> = props => {
 
 	return (
 		<>
-			<TetxButton color="inherit" className={'top-navigation__login'}>{text}</TetxButton>
+			<TetxButton color="inherit" className={'top-navigation__login'} onClick={ handleClick} >{text}</TetxButton>
 		</>
 	)
 }
