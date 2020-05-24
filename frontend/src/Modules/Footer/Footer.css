@@ -1,0 +1,13 @@
+.footer__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container__container-logo {
+    color: #0b1475;
+    margin-left: 3rem;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+}

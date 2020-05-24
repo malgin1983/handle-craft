@@ -2,10 +2,15 @@ import * as React from 'react'
 import './NavigationButtons.css'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
-import RestoreIcon from '@material-ui/icons/Restore'
-import FavoriteIcon from '@material-ui/icons/Favorite'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
-
+import BorderAllIcon from '@material-ui/icons/BorderAll'
+import BusinessIcon from '@material-ui/icons/Business'
+import HomeWorkIcon from '@material-ui/icons/HomeWork'
+import StyleIcon from '@material-ui/icons/Style'
+import BuildSharpIcon from '@material-ui/icons/BuildSharp'
+import AddToPhotosSharpIcon from '@material-ui/icons/AddToPhotosSharp'
+import DvrSharpIcon from '@material-ui/icons/DvrSharp'
+import FireplaceSharpIcon from '@material-ui/icons/FireplaceSharp';
 
 const NavigationButtons:React.FC = () => {
 	const [value, setValue] = React.useState(0);
@@ -20,12 +25,15 @@ const NavigationButtons:React.FC = () => {
 				showLabels
 				className={'navigation-buttons__container'}
 			>
-				<BottomNavigationAction  label="Пвх" icon={<RestoreIcon />} />
-				<BottomNavigationAction  label="Алюминий" icon={<FavoriteIcon />} />
-				<BottomNavigationAction  label="Витражи" icon={<LocationOnIcon />} />
-				<BottomNavigationAction  label="Комплектующие" icon={<RestoreIcon />} />
-				<BottomNavigationAction  label="Декор" icon={<FavoriteIcon />} />
-				<BottomNavigationAction  label="Новости рынка" icon={<LocationOnIcon />} />
+				<BottomNavigationAction  label='Пвх' icon={<BorderAllIcon  />} />
+				<BottomNavigationAction  label='Алюминий' icon={<BusinessIcon />} />
+				<BottomNavigationAction  label='Витражи' icon={<HomeWorkIcon />} />
+				<BottomNavigationAction  label='Комплектующие' icon={<BuildSharpIcon />} />
+				<BottomNavigationAction  label='Декор' icon={<StyleIcon />} />
+				<BottomNavigationAction  label='Огнестойкие' icon={<FireplaceSharpIcon />} />
+				<BottomNavigationAction  label='Расчет' icon={<AddToPhotosSharpIcon />} />
+				<BottomNavigationAction  label='Информация' icon={<DvrSharpIcon />} />
+				<BottomNavigationAction  label='Регион' icon={<LocationOnIcon />} />
 			</BottomNavigation>
 
 		</div>

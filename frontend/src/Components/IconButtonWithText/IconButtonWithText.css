@@ -1,0 +1,32 @@
+.icon-button-with-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #23527c;
+    padding-bottom: 8px;
+
+}
+
+.icon-button-with-text:hover {
+    cursor: pointer;
+    color: crimson;
+
+}
+.icon-button-with-text__logo {
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 4px;
+}
+
+.icon-button-with-text__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__container__container-buttons {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12%;
+}
