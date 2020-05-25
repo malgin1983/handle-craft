@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 interface State {
-    name: string
     login: string
     password: string
     weight: string
@@ -43,15 +42,11 @@ interface State {
 const LoginComponent: React.FC = () => {
     const classes = useStyles();
     const [values, setValues] = React.useState<State>({
-        name: '',
         login: '',
         password: '',
         weight: '',
         showPassword: false,
     });
-    const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setValues({ ...values, name: event.target.value });
-    };
 
     const handleLoginChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValues({ ...values, login: event.target.value });
@@ -71,15 +66,6 @@ const LoginComponent: React.FC = () => {
 
     return (
         <div className={'login-component'}>
-            <FormControl className={clsx(classes.margin, classes.textField)}>
-                <InputLabel htmlFor="login-name">Ф.И.O</InputLabel>
-                <Input
-                    id="login-name"
-                    type={'text'}
-                    value={values.name}
-                    onChange={handleNameChange}
-                />
-            </FormControl>
             <FormControl className={clsx(classes.margin, classes.textField)}>
                 <InputLabel htmlFor="login-login">Логин (email)</InputLabel>
                 <Input
