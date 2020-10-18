@@ -1,6 +1,0 @@
-{
-  "port" : 4000,
-  "privateKey":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9",
-  "mongoUri": "mongodb+srv://vadim:malgin1983@cluster0-508yq.mongodb.net/server-ts?retryWrites=true&w=majority",
-  "baseURL": "http://localhost:3000/"
-}
