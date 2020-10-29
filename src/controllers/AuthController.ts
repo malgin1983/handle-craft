@@ -8,6 +8,7 @@ import config from 'config';
 interface  IAuthController {
     (req: Request, res: Response) : void
 }
+
 export const RegistrationController: IAuthController = async (req: Request, res: Response) => {
     try {
         const  errors = validationResult( req)
@@ -24,8 +25,8 @@ export const RegistrationController: IAuthController = async (req: Request, res:
                 message: 'User already exists'
             })
          const hashPassword =  await bcript.compare( password , '7') ;
-         const user = new User({email, password: hashPassword})
-         await  user.save()
+         const user = await User.create({email, password: hashPassword})
+         if(!!user)
             res.status(201).json({
                 message: 'User created success',
             })

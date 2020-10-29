@@ -40,11 +40,11 @@ exports.RegistrationController = (req, res) => __awaiter(void 0, void 0, void 0,
                 message: 'User already exists'
             });
             const hashPassword = yield bcript.compare(password, '7');
-            const user = new user_1.default({ email, password: hashPassword });
-            yield user.save();
-            res.status(201).json({
-                message: 'User created success',
-            });
+            const user = yield user_1.default.create({ email, password: hashPassword });
+            if (!!user)
+                res.status(201).json({
+                    message: 'User created success',
+                });
         }
     }
     catch (e) {

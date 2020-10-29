@@ -17,6 +17,8 @@ const config_1 = __importDefault(require("config"));
 const DBconnection_1 = __importDefault(require("./DBconnection"));
 const PORT = config_1.default.get('port') || 4000;
 const server = express_1.default();
+server.use(express_1.default.json({ extended: true }));
+server.use('/api/auth', require('./routes/auth.routes'));
 function startServer() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
