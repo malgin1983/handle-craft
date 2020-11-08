@@ -1,2 +1,3 @@
 # market-project
-Full stack market  project ( React, Redux-Saga,  Mongo-DB,  Express, Typescript)
+Full stack market  project ( React,Redux, Redux-Saga,  PostgreSQL,  Express, Typescript)
+ 
