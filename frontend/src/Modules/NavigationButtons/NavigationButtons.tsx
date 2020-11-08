@@ -2,11 +2,12 @@ import * as React from 'react';
 import './NavigationButtons.css';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import BorderAllIcon from '@material-ui/icons/BorderAll';
-import BusinessIcon from '@material-ui/icons/Business';
-import BuildSharpIcon from '@material-ui/icons/BuildSharp';
-import FireplaceSharpIcon from '@material-ui/icons/FireplaceSharp';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import TvIcon from '@material-ui/icons/Tv';
+import RateReviewIcon from '@material-ui/icons/RateReview';
+import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
+import MessageIcon from '@material-ui/icons/Message';
+import HomeIcon from '@material-ui/icons/Home';
 
 const NavigationButtons: React.FC = () => {
     const [value, setValue] = React.useState(0);
@@ -21,11 +22,12 @@ const NavigationButtons: React.FC = () => {
                 showLabels
                 className={'navigation-buttons__container'}
             >
-                <BottomNavigationAction label="Каналы" icon={<BorderAllIcon />} />
-                <BottomNavigationAction label="Подписки" icon={<BusinessIcon />} />
-                <BottomNavigationAction label="Добавленое" icon={<FireplaceSharpIcon />} />
-                <BottomNavigationAction label="Сообщения" icon={<BuildSharpIcon />} />
-                <BottomNavigationAction label="Информация" icon={<LocationOnIcon />} />
+                <BottomNavigationAction label={'Главная'} icon={<HomeIcon />} />
+                <BottomNavigationAction label="Каналы" icon={<TvIcon />} />
+                <BottomNavigationAction label="Подписки" icon={<RateReviewIcon />} />
+                <BottomNavigationAction label="Добавленое" icon={<AddToPhotosIcon />} />
+                <BottomNavigationAction label="Сообщения" icon={<MessageIcon />} />
+                <BottomNavigationAction label="Курсы" icon={<AssignmentIcon />} />
             </BottomNavigation>
         </div>
     );

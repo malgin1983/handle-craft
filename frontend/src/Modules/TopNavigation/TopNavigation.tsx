@@ -3,12 +3,12 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import './TopNavigation.css';
-import TextButton from '../../Components/TextButton/TextButton';
 import NavigationButtons from '../NavigationButtons/NavigationButtons';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import RegistrationModal from '../../Components/RegistrationModal/RegistrationModal';
+import IconButtonWithText from '../../Components/IconButtonWithText/IconButtonWithText';
 
 const TopNavigation: React.FC = () => {
     const ButterButton = withStyles({
@@ -35,10 +35,17 @@ const TopNavigation: React.FC = () => {
                     <MenuIcon />
                 </ButterButton>
             </div>
-            <div className={'top-navigation__right'}>
+            <div className="top-navigation__center">
                 <NavigationButtons />
+            </div>
+            <div className={'top-navigation__right'}>
                 <div>
-                    <TextButton text={'Войти'} color={'#0b1475'} handleClick={handleOpen} />
+                    <IconButtonWithText
+                        typeIcon={'registry'}
+                        text={'Войти'}
+                        color={'inherit'}
+                        handleClick={handleOpen}
+                    />
                     <Modal
                         aria-labelledby="transition-modal-title"
                         aria-describedby="transition-modal-description"
